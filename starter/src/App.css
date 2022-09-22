@@ -1,0 +1,285 @@
+/* --------- This is CSS Reset Code --------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* --------- Begin your CSS Below here --------- */
+
+header {
+	/* width: calc(100vw - 60px); */
+	height: 60px;
+	background-color: rgb(249, 143, 38);
+	color: aliceblue;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 50px 0 50px;
+}
+
+
+.nav {
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+	margin: 30px;
+	font-size: 1.1rem;
+}
+
+h1 {
+	color: rgb(249, 143, 38);
+	font-size: 3.2rem;
+	padding: 10px 0;
+}
+
+h3 {
+	color: aliceblue;
+}
+
+.banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#add-banner {
+	width: 500px;
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	padding: 45px;
+	font-size: 1.2rem;
+}
+
+button {
+	padding: 10px;
+	background-color: rgb(121, 182, 170);
+	color: aliceblue;
+	border: 0;
+	margin-bottom: 15px;
+	font-size: 1.1rem;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+/* SEARCH BAR */
+
+.search {
+	min-width: 250px;
+  width: 30vw;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(249, 143, 38, 0.5);
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 5px;
+  box-sizing: border-box;
+}
+
+.search_bar input {
+  width: 100%;
+  border-radius: 0 30px 30px 0;
+  /* font-size: 20px; */
+}
+
+.search svg {
+  height: 80%;
+}
+
+.input-search {
+	/* background-color: rgb(249, 143, 38, 0.5); */
+  height: 45px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent
+}
+
+input {
+	height: 45px;
+	width: 250px;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* RECIPE CARD */
+
+.recipe-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	gap: 50px;
+}
+
+.recipe-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 50px;
+	/* padding: 50px; */
+}
+
+.recipe-card {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+	gap: 10px;
+	box-shadow: 5px 5px 8px #8888;
+	width: fit-content;
+	/* min-height: 450px; */
+}
+
+img {
+	width: 300px;
+	object-fit: cover;
+	height: 300px;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+}
+
+/* DETAIL SCREEN */
+
+.detail-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 500px;
+}
+
+form {
+	max-width: 675px;
+}
+
+.ckeckbox {
+	display: flex;
+	align-items: center;
+}
+
+.checkbox-circle {
+	width: 20px;
+	margin: 0 20px;
+}
+
+.small-input {
+	width: 30%;
+	/* max-width: 190px; */
+}
+
+.ingredient-container {
+	display: flex;
+	flex-direction: column;
+}
+
+ul {
+width: 50%;
+}
+
+.orange-btn {
+	background-color: rgb(249, 143, 38);
+	width: 150px;
+	position: relative;
+	left: calc(50% - 75px);
+}
+
+.save-btn {
+	width: 150px;
+	position: relative;
+	left: calc(50% - 75px);
+}
+
+.detail-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 50px;
+	gap: 80px;
+}
+
+.ingredients-container, .instructions-container {
+	box-shadow: 3px 3px 8px #8888;
+	min-width: 200px;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+/* NEW RECIPE */
+
+.newRecipe-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 50px;
+	align-items: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	width: 70%;
+}
+
+.new-recipe-input {
+	display: flex;
+	justify-content: space-between;
+} 
+
+.checkbox-container {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: dimgray;
+	color: aliceblue;
+	height: 150px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 50px 0 50px;
+}
+
+.icon-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 10px;
+}
+
